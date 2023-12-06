@@ -1,11 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;600;700;800&display=swap');
-
-body {
-    /* max-width: 1024px; */
+html {
     min-width: 512px;
+}
+body {
+    max-width: 768px;
+    
+   
     margin: auto;
     background: #000;
     letter-spacing: 1pt;
-    overflow-x: visible;
+    
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+      
+    
 }

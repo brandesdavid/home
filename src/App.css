@@ -1,20 +1,27 @@
 
 
 #root {
-  min-width: none;
   max-width: 1280px;
+  min-width: 512px;
   margin: 0 auto;
-  text-align: center;
-  max-width: 100%;
+  /* text-align: center; */
   
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: aliceblue;
+  
+  display: flex;
+  flex-direction: column;
+ 
 }
+
 
 /* navbar  */
 
 .nav{
   text-align: center;
   display: flex;
-  /* background: green; */
+  
   margin-bottom: 5rem;
 }
 .nav--branding {
@@ -23,6 +30,16 @@
   letter-spacing: -1pt;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 4rem;
+
+  .nav--branding--subtitle {
+    display: block;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+    color: gray;
+  }
 }
 .nav--links {
   display: flex;
@@ -30,15 +47,29 @@
   padding-right: 1rem;
 }
 .nav--links > li {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   padding-top: 3rem;
   list-style: none;
-  letter-spacing: inherit;
+
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 /* home */
 
 .home {
-  text-align: center;
-  align-items: center;
+  /* text-align: center;
+  align-items: center; */
+}
+
+/* footer */
+
+.footer {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  margin-top: auto;
+}
+
+html, body, #root {
+  height: 100%;
 }

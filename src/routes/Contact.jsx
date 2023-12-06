@@ -1,13 +1,18 @@
-import "../App.css"
-export default function Contact() {
+import { useState, useEffect } from "react"
+import Markdown from "react-markdown"
 
+export default function Contact() {
+  const [markdown, setMarkdown] = useState('')
+
+    useEffect(() => {
+      fetch("./pages/contact.md")
+      .then(response => response.text())
+      .then(text => setMarkdown(text))
+    }
+
+  )
   return (
-    <>
-        
-        <div className="flex justify-center items-center font-intertight">
-        <p>hello, welcome to my contacts page</p>
-        </div>
-    </>
+    <Markdown children={markdown} />
   )
 }
 
