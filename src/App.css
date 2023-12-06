@@ -1,0 +1,44 @@
+
+
+#root {
+  min-width: none;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+  
+}
+
+/* navbar  */
+
+.nav{
+  text-align: center;
+  display: flex;
+  /* background: green; */
+  margin-bottom: 5rem;
+}
+.nav--branding {
+  
+  margin-left: 1rem;
+  letter-spacing: -1pt;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.nav--links {
+  display: flex;
+  margin-left: auto;
+  padding-right: 1rem;
+}
+.nav--links > li {
+  padding-left: 1rem;
+  padding-top: 3rem;
+  list-style: none;
+  letter-spacing: inherit;
+}
+
+/* home */
+
+.home {
+  text-align: center;
+  align-items: center;
+}
