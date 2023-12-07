@@ -1,0 +1,82 @@
+.contactsBox {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 684px){
+        align-items: left;
+    }
+    @media (max-width: 684px){
+        align-items: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+}
+
+
+.github {
+    display: flex;
+    margin-bottom: -4rem;
+}
+.github > a {
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 0.5rem;
+}
+
+.github > img {
+    max-width: 5rem;
+    margin-bottom: 5rem;
+    object-fit: contain;
+}
+
+.mail {
+    display: flex;
+    margin-bottom: -4rem;
+}
+.mail > a {
+    
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    
+    font-size: 4rem;
+    
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 0.5rem;
+}
+
+.mail > img {
+    max-width: 5rem;
+    margin-bottom: 5rem;
+    object-fit: contain;
+
+}
+
+@media (max-width: 684px){
+    
+    .github > a {
+        
+        font-size: 2rem;
+    }
+    .github > img {
+        max-width: 3rem;
+    }
+
+    .mail > a {
+        font-size: 2rem;
+    }
+    .mail > img {
+        max-width: 3rem;
+    }
+}
+
+.message{
+    white-space: nowrap;
+    @media (max-width: 684px) {
+        font-size: 2rem;
+    }
+}

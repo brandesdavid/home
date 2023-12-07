@@ -1,0 +1,134 @@
+
+
+/* home logos*/
+.logoBox {
+    margin-top: 3.4rem;
+    margin-left: -1rem;
+  
+    max-width: 4rem;
+    min-width: 4rem;
+    display: flex;
+    
+  
+  }
+  .logoBox > img {
+    /* background-color: green; */
+    margin-right: 1rem;
+    margin-bottom: 0%;
+    
+  }
+  
+  @media (max-width: 684px){
+    .mobile--branding--logo{
+      display: flex;
+      justify-content: center;
+      margin-left: -1rem;
+    }
+    .logoBox{
+      margin-left: -2rem;
+    }
+  }
+  
+  .home{
+    @media (min-width: 684px){
+      display: flex;
+      margin-bottom: 5rem;
+      margin-top: auto;
+    }
+  
+    justify-content: center;
+  
+    @media (max-width: 684px){
+      text-align: center;
+     
+    }
+  }
+  .home--description {
+    
+    margin-left: 5rem;
+    font-size: medium;
+    text-align: left;
+  }
+  /* home nav */
+  
+  
+  .home--portrait{
+    max-height: 30rem;
+    max-width: 30rem;
+  
+    /* width: 30rem; */
+    border-radius: 2rem;
+  }
+  
+  .branding {
+    @media (min-width: 684px){
+      margin-left: 5rem;
+      margin-right: 1rem;
+      
+    }
+    @media (max-width: 684px){
+      text-align: center;
+    }
+    letter-spacing: -1pt;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 4rem;
+  
+    .branding--subtitle {
+      display: block;
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      font-weight: 200;
+      color: gray;
+      text-align: center;
+    }
+  }
+  
+  /* größere bildschirme -- home nav*/
+  @media (min-width: 684px){
+    .home--links {
+      text-align: center;
+      margin-left: auto;
+      padding-right: rem;
+      
+    }
+    .home--links > li {
+      /* padding-left: 1.5rem; */
+      padding-top: 3rem;
+      list-style: none;
+    
+      font-weight: 400;
+      font-size: 3rem;
+      
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* kleinere bildschirme -- home nav */
+  @media (max-width: 684px){
+    
+    .home--links {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      
+      margin-right: 4rem;
+      
+    }
+    .home--links > li {
+      
+      padding-left: 1.5rem;
+    
+      padding-top: 1.5rem;
+      
+      
+      list-style: none;
+    
+      font-weight: 400;
+      font-size: 3rem;
+      
+      flex-wrap: wrap;
+    }
+  }

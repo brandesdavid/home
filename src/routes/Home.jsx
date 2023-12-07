@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import '../styles/Home.css'
+
 import portrait from '../portrait.png'
 
 import reactLogo from '../assets/react.svg'
@@ -9,6 +11,7 @@ import cLogo from '../assets/c.svg'
 import nodejsLogo from '../assets/nodejs.svg'
 import viteLogo from '../assets/vite.svg'
 import githubLogo from '../assets/gh.png'
+
 
 export default function Home() {
 
