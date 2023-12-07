@@ -15,7 +15,7 @@ export default function Projects() {
 
   return (
     
-    <Markdown className={style} children={markdown} />
+    <Markdown className={style.general} children={markdown} />
     
   );
 }
