@@ -7,14 +7,14 @@ export default function About() {
   const [markdown, setMarkdown] = useState('')
 
   useEffect(() => {
-    fetch('./pages/home.md')
+    fetch('./pages/about.md')
     .then(response => response.text())
     .then(text => setMarkdown(text))
   })
 
   return (
     
-        <Markdown className={style.p} children={markdown}/>
+        <Markdown className={style} children={markdown}/>
     
   )
 }

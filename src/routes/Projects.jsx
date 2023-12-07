@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
+import style from '../styles/markdown.module.css'
 
 export default function Projects() {
   // useState erstellt einen neuen Zustand, der in der Variable markdown gespeichert wird
@@ -14,7 +15,7 @@ export default function Projects() {
 
   return (
     
-    <Markdown children={markdown} />
+    <Markdown className={style} children={markdown} />
     
   );
 }

@@ -10,7 +10,7 @@ export default function Navbar() {
       <Link to='/' >david brandes</Link>
 
         <p className="nav--branding--subtitle">
-          software engineer
+          software developer
         </p>
 
       </h4>

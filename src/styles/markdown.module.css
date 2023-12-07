@@ -9,11 +9,45 @@
     object-fit: contain;
    
 } */
+.contact {
+    margin-top: -4rem;
+}
+.contact > h3 {
+    margin-bottom: 4rem;
+}
+.contact > p{
+    
+   margin-bottom: -0.5rem;
+   @media (max-width: 684px){
+    
+    justify-content: left;
+    margin-left: 4rem;
+    }
+}
+
+
+@media (max-width: 684px){
+    p {
+        font-size: large;
+        justify-content: center;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: larger;
+        
+    }
+}
+img {
+    max-width: 4rem;
+    margin-right: 1.5rem;
+}
 p {
    display: block;
    text-align: justify;
+   display: flex;
+
 }
 li > p {
     text-align: left;
-    
+    display: block;
 }

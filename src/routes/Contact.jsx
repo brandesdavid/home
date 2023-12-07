@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Markdown from "react-markdown"
+import style from '../styles/markdown.module.css'
 
 export default function Contact() {
   const [markdown, setMarkdown] = useState('')
@@ -12,7 +13,7 @@ export default function Contact() {
 
   )
   return (
-    <Markdown children={markdown} />
+    <Markdown className={style.contact} children={markdown} />
   )
 }
 
