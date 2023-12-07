@@ -22,7 +22,9 @@
     .mobile--branding--logo{
       display: flex;
       justify-content: center;
-      margin-left: -1rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5rem;
     }
     .logoBox{
       margin-left: -2rem;
@@ -43,12 +45,7 @@
      
     }
   }
-  .home--description {
-    
-    margin-left: 5rem;
-    font-size: medium;
-    text-align: left;
-  }
+  
   /* home nav */
   
   
@@ -111,16 +108,17 @@
     .home--links {
       display: flex;
       margin-left: auto;
-      margin-right: auto;
       justify-content: center;
-      
+
+
+
       margin-right: 4rem;
       
     }
     .home--links > li {
       
-      padding-left: 1.5rem;
-    
+      padding-left: 1rem;
+      padding-right: 1rem;
       padding-top: 1.5rem;
       
       

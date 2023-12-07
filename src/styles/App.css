@@ -30,9 +30,12 @@
 
 .footer {
   font-size: 2rem;
+  color: #777777;
+
   margin-bottom: 2.5rem;
   margin-top: auto;
-  color: #777777;
+
+  
 }
 
 @media (max-width: 684px){
