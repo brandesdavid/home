@@ -38,7 +38,7 @@
 .home--portrait{
   max-height: 30rem;
   max-width: 30rem;
-  justify-content: center;
+
   /* width: 30rem; */
   border-radius: 2rem;
 }
@@ -217,7 +217,7 @@
   font-size: 2rem;
   margin-bottom: 2.5rem;
   margin-top: auto;
-  
+  color: #777777;
 }
 
 @media (max-width: 684px){
