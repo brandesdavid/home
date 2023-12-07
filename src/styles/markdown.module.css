@@ -1,0 +1,19 @@
+/* img {
+    margin-left: 15rem;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    width: 30rem;
+    
+    object-fit: contain;
+   
+} */
+p {
+   display: block;
+   text-align: justify;
+}
+li > p {
+    text-align: left;
+    
+}

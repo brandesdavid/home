@@ -1,0 +1,295 @@
+
+
+#root {
+
+  
+  margin: 0 auto;
+  @media (max-width: 684px){
+    text-align: center;
+  }
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: aliceblue;
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+/* home nav */
+.logoBox {
+  margin-top: 3.4rem;
+}
+
+.home{
+  @media (min-width: 684px){
+    display: flex;
+    margin-bottom: 5rem;
+    margin-top: 40rem;
+  }
+  
+  @media (max-width: 684px){
+    text-align: center;
+    margin-top: 10rem;
+  }
+}
+
+.home--portrait{
+  max-height: 30rem;
+  max-width: 30rem;
+  justify-content: center;
+  /* width: 30rem; */
+  border-radius: 2rem;
+}
+
+.branding {
+  @media (min-width: 684px){
+    margin-left: 5rem;
+    margin-right: 1rem;
+    
+  }
+  @media (max-width: 684px){
+    text-align: center;
+  }
+  letter-spacing: -1pt;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 4rem;
+
+  .branding--subtitle {
+    display: block;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+    color: gray;
+    text-align: center;
+  }
+}
+
+/* größere bildschirme -- home nav*/
+@media (min-width: 684px){
+  .home--links {
+    text-align: center;
+    margin-left: auto;
+    padding-right: rem;
+    
+  }
+  .home--links > li {
+    /* padding-left: 1.5rem; */
+    padding-top: 3rem;
+    list-style: none;
+  
+    font-weight: 400;
+    font-size: 3rem;
+    
+    flex-wrap: wrap;
+  }
+}
+
+/* kleinere bildschirme -- home nav */
+@media (max-width: 684px){
+  
+  .home--links {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+    margin-right: 4rem;
+    
+  }
+  .home--links > li {
+    
+    padding-left: 1.5rem;
+  
+    padding-top: 1.5rem;
+    
+    
+    list-style: none;
+  
+    font-weight: 400;
+    font-size: 3rem;
+    
+    flex-wrap: wrap;
+  }
+}
+
+
+
+/* navbar */
+
+.nav{
+  text-align: center;
+  @media (min-width: 684px){
+    display: flex;
+  }
+  
+  margin-bottom: 5rem;
+}
+
+.nav--branding:hover {
+  /* color: #e6e6e6; */
+  border-bottom: none;
+  
+  /* background: green; */
+}
+.nav--branding {
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  letter-spacing: -1pt;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 4rem;
+  
+
+  .nav--branding--subtitle {
+    display: block;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+    color: gray;
+
+    text-align: center;
+  }
+}
+
+/* größere bildschirme */
+@media (min-width: 684px){
+  .nav--links {
+    display: flex;
+    margin-left: auto;
+    padding-right: 1rem;
+    
+  }
+  .nav--links > li {
+    margin-left: 1.5rem;
+    /* padding-left: 1.5rem; */
+    padding-top: 3rem;
+    list-style: none;
+  
+    font-weight: 400;
+    font-size: 3rem;
+    
+    flex-wrap: wrap;
+  }
+}
+
+/* kleinere bildschirme */
+@media (max-width: 684px){
+  
+  .nav--links {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+    margin-right: 4rem;
+    
+  }
+  .nav--links > li {
+    
+    margin-left: 1.5rem;
+  
+    padding-top: 1.5rem;
+    
+    
+    list-style: none;
+  
+    font-weight: 400;
+    font-size: 3rem;
+    
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+/* footer */
+
+.footer {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  margin-top: auto;
+  
+}
+
+@media (max-width: 684px){
+  .footer > p {
+    text-align: center;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+
+
+
+
+/* animation for navbar--links */
+a:visited{
+  color: aliceblue;
+}
+a:hover {
+  color: aliceblue;
+  border-bottom: none !important;
+}
+
+.nav--links > li{
+  display: inline-block;
+  position: relative;
+  
+}
+
+.nav--links > li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  #c9c9c9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav--links > li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* same for home--links */
+
+.home--links > li{
+  display: inline-block;
+  position: relative;
+  
+}
+
+.home--links > li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  #c9c9c9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.home--links > li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

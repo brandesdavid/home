@@ -2,7 +2,6 @@ Hello! I'm a software developer from Berlin,
 19 years old and always staying curious.
 
 
-
 #### About me
 
 From my earliest memories, I found joy in disassembling toys, exploring the intricate springs and gears within, captivated by the mysteries of their inner workings. This childhood curiosity planted the seeds for a lifelong fascination with understanding the "why" and "how" behind everything.

@@ -1,5 +1,5 @@
 
-import "../App.css"
+
 import { Link } from "react-router-dom"
 export default function Navbar() {
 
@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="nav">
     
       <h4 className="nav--branding">
-        david brandes
+      <Link to='/' >david brandes</Link>
 
         <p className="nav--branding--subtitle">
           software engineer
@@ -15,8 +15,8 @@ export default function Navbar() {
 
       </h4>
       
-      <ul className="nav--links">
-        <li><Link to='/'>home</Link></li>
+      <ul className="nav--links ">
+        <li><Link to='/about'>about</Link></li>
         <li><Link to='/projects'>projects</Link></li>
         <li><Link to='/contact'>contact</Link></li>
       </ul>
